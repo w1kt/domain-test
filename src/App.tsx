@@ -1,10 +1,11 @@
 import React, { PureComponent } from 'react'
+import './App.css'
 
 export class App extends PureComponent {
   render() {
     return (
       <div>
-        Test
+        <img className="App-mockup" src="./default-view.png"></img>
       </div>
     )
   }
