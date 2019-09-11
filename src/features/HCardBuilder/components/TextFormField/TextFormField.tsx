@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
+import { Field } from 'redux-form';
 import FormField, { FormFieldProps } from '../FormField/FormField';
-import TextInput from '../TextInput/TextInput';
+import './TextFormField.css';
 
 interface Props extends FormFieldProps {}
 
@@ -9,10 +10,22 @@ interface Props extends FormFieldProps {}
  * It has no signature in the DOM and is purely a logical wrapper.
  */
 export class TextFormField extends PureComponent<Props> {
-  render() {
+  /**
+   * Transform to lowercase and replace spaces with dashes.
+   * @param label 
+   */
+  private createNameFromLabel(label: string) {
+    return label.toLowerCase().replace(/\s+/g, '-');
+  }
+  public render() {
     return (
       <FormField {...this.props}>
-        <TextInput />
+        <Field
+          className="TextInput"
+          name={this.createNameFromLabel(this.props.label)}
+          component="input"
+          type="text"
+        />
       </FormField>
     );
   }
