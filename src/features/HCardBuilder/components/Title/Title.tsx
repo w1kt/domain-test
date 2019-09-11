@@ -10,7 +10,7 @@ interface Props {
  * @param props 
  */
 const Title: React.FC<Props> = props => {
-  return <span className="Title primary-accent">{props.text}</span>;
+  return <h1 className="Title primary-accent">{props.text}</h1>;
 };
 
 export default React.memo(Title);

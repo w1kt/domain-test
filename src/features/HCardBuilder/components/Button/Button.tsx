@@ -20,8 +20,9 @@ class Button extends PureComponent<ButtonProps> {
       backgroundColor: this.props.bgColor,
       borderColor: this.props.borderColor
     };
+    const type = this.props.type || 'button';
     return (
-      <button className="Button" type={this.props.type} style={style}>
+      <button className="Button" type={type} style={style}>
         {this.props.name}
       </button>
     );

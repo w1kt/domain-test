@@ -15,7 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "coverage": "node scripts/test.js --env=jsdom --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,11 +34,16 @@
     ]
   },
   "devDependencies": {
+    "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.4",
     "@types/react": "^16.9.2",
     "@types/react-dom": "16.9.0",
     "@types/react-redux": "^7.1.2",
-    "@types/redux-form": "^8.1.5"
+    "@types/redux-form": "^8.1.5",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "react-test-renderer": "^16.9.0"
   }
 }

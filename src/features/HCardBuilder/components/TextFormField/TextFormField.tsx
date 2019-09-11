@@ -14,7 +14,7 @@ export class TextFormField extends PureComponent<Props> {
    * Transform to lowercase and replace spaces with dashes.
    * @param label 
    */
-  private createNameFromLabel(label: string) {
+  public createNameFromLabel(label: string) {
     return label.toLowerCase().replace(/\s+/g, '-');
   }
   public render() {

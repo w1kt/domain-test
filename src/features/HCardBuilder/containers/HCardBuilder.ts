@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { ConfigProps, DecoratedComponentClass, InjectedFormProps } from 'redux-form';
+import { ConfigProps, DecoratedComponentClass } from 'redux-form';
 import { State } from '../../../reducers/rootReducer';
 import { setAvatar } from '../actions/actions';
 import HCardBuilderForm from '../components/HCardBuilder';

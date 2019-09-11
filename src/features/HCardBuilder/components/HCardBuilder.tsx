@@ -1,5 +1,5 @@
-import React, { Component, PureComponent } from 'react';
-import { reduxForm, InjectedFormProps } from 'redux-form';
+import React, { PureComponent } from 'react';
+import { InjectedFormProps, reduxForm } from 'redux-form';
 import { HCardBuilderProps } from '../containers/HCardBuilder';
 import CreateHCardButton from './CreateHCardButton/CreateHCardButton';
 import FormGroup from './FormGroup/FormGroup';
@@ -13,7 +13,7 @@ import { UserDetails } from './UserDetails';
  * This component shows a form that allows users to input their details in order
  * to build a hCard.
  */
-class HCardBuilder extends PureComponent<
+export class HCardBuilder extends PureComponent<
   InjectedFormProps<UserDetails, HCardBuilderProps> & HCardBuilderProps
 > {
   public render() {

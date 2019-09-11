@@ -4,7 +4,7 @@ import '../Button/Button.css';
 
 interface Props extends ButtonProps {
   onFileUpload: Function;
-  accept: React.InputHTMLAttributes<HTMLInputElement>['accept']
+  accept: React.InputHTMLAttributes<HTMLInputElement>['accept'];
 }
 
 /**
@@ -12,7 +12,14 @@ interface Props extends ButtonProps {
  * Use the accept prop to specify the allowed types.
  */
 export class FileInputButton extends PureComponent<Props> {
-  render() {
+  public handleOnChange(event: React.ChangeEvent<HTMLInputElement>) {
+    const file = event.target.files && event.target.files[0];
+    if (!file) {
+      return;
+    }
+    this.props.onFileUpload(URL.createObjectURL(file));
+  }
+  public render() {
     const style = {
       backgroundColor: this.props.bgColor,
       borderColor: this.props.borderColor
@@ -24,13 +31,7 @@ export class FileInputButton extends PureComponent<Props> {
           id="files-input"
           type="file"
           accept={this.props.accept}
-          onChange={event => {
-            const file = event.target.files && event.target.files[0];
-            if (!file) {
-              return;
-            }
-            this.props.onFileUpload(URL.createObjectURL(file));
-          }}
+          onChange={event => this.handleOnChange(event)}
         />
       </div>
     );

@@ -10,7 +10,7 @@ interface Props {
  * @param props 
  */
 const GroupTitle: React.FC<Props> = props => {
-  return <span className="GroupTitle">{props.text}</span>;
+  return <h2 className="GroupTitle">{props.text}</h2>;
 };
 
 export default React.memo(GroupTitle);
