@@ -1,0 +1,18 @@
+.ComponentPreview {
+  background-color: #e7e9ec;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.preview-content {
+  margin-top: -70px;
+}
+.preview-name {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #95a5a6;
+  font-weight: 400;
+  margin-bottom: 8px;
+}

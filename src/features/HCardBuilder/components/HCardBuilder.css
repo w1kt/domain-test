@@ -1,6 +1,9 @@
 .HCardBuilder {
   padding: 40px;
-  width: 400px
+  display: flex;
+  flex: 0.767;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .flex-grid {
   display: flex;

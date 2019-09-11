@@ -4,6 +4,10 @@
 
 .App {
   font-family: 'Merriweather Sans', serif;
+  display: flex;
+  flex: 1;
+  max-width: 1000px;
+  box-sizing: border-box;
 }
 .App-mockup {
   opacity: 0.3;
