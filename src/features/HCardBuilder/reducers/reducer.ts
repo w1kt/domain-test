@@ -1,20 +1,20 @@
 import { Actions } from '../actions/actions';
-import { SET_AVATAR } from '../actions/constants';
+import { SET_AVATAR_URL } from '../actions/constants';
 
 type HCardBuilderState = Readonly<{
-  avatar: string;
+  avatarUrl: string;
 }>;
 
 const initialState: HCardBuilderState = {
-  avatar: ''
+  avatarUrl: ''
 };
 
 export default (state = initialState, action: Actions): HCardBuilderState => {
   switch (action.type) {
-    case SET_AVATAR: {
+    case SET_AVATAR_URL: {
       state = {
         ...state,
-        avatar: action.payload.file
+        avatarUrl: action.payload.file
       };
     }
     default: {
