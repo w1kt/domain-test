@@ -10,7 +10,7 @@ export interface FormFieldProps {
  * This component allows grouping of some input field with a label.
  */
 export class FormField extends PureComponent<FormFieldProps> {
-  render() {
+  public render() {
     return (
       <div className="FormField">
         <FieldLabel text={this.props.label} /> 

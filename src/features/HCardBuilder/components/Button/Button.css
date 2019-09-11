@@ -2,10 +2,25 @@
   align-items: center;
   justify-content: center;
   height: 40px;
+  font-family: 'Merriweather Sans', serif;
   font-size: 20px;
   color: white;
   letter-spacing: 0.4px;
   margin-top: -3px;
+  border-style: solid;
   border-radius: 3px;
   border-width: 0 0 1px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.Button label {
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
+}
+#files-input{
+  display: none;
 }

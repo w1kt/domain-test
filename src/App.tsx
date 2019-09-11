@@ -3,7 +3,7 @@ import './App.css';
 import HCardBuilder from './features/HCardBuilder/components';
 
 export class App extends PureComponent {
-  render() {
+  public render() {
     return (
       <div className="App">
         <img className="App-mockup" src="./completed-view.png"></img>

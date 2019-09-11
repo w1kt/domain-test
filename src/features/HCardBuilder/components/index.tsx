@@ -5,6 +5,8 @@ import './index.css';
 import TextFormField from './TextFormField/TextFormField';
 import Title from './Title/Title';
 import { reduxForm, InjectedFormProps } from 'redux-form';
+import UploadAvatarButton from './UploadAvatarButton/UploadAvatarButton';
+import CreateHCardButton from './CreateHCardButton/CreateHCardButton';
 
 /**
  * This component shows a form that allows users to input their details in order
@@ -30,13 +32,8 @@ const HCardBuilder: React.FC<InjectedFormProps> = props => {
         <TextFormField label="Country" />
       </FormGroup>
       <div className="flex-grid two-col">
-        <Button name="Upload Avatar" bgColor="#758E9D" borderColor="#506470" />
-        <Button
-          name="Create hCard"
-          bgColor="#3FA9E2"
-          borderColor="#3193C6"
-          type="submit"
-        />
+        <UploadAvatarButton />
+        <CreateHCardButton />
       </div>
     </form>
   );

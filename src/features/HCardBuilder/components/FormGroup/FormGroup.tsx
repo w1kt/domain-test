@@ -11,7 +11,7 @@ interface Props {
  * form fields with a title.
  */
 export class FormGroup extends PureComponent<Props> {
-  render() {
+  public render() {
     return (
       <div className="FormGroup">
         <GroupTitle text={this.props.groupTitle} />
