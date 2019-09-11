@@ -5,13 +5,14 @@
 .App {
   font-family: 'Merriweather Sans', serif;
 }
-
 .App-mockup {
-  display: none;
   opacity: 0.3;
-  position: absolute
+  position: absolute;
 }
-
 .primary-accent {
-  color: #394F63;
+  color: #394f63;
+}
+h1,
+h2 {
+  margin: 0;
 }

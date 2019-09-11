@@ -1,4 +1,4 @@
-.Button {
+div.Button, button.Button {
   align-items: center;
   justify-content: center;
   height: 40px;
