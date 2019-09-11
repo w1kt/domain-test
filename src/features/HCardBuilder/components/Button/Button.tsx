@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import './Button.css';
 
-interface Props {
+export interface ButtonProps {
   name: string;
   bgColor?: string;
   borderColor?: string;
-  type?: React.ButtonHTMLAttributes<HTMLButtonElement>['type'] | 'file';
+  type?: React.ButtonHTMLAttributes<HTMLButtonElement>['type'];
 }
 
 /**
@@ -14,35 +14,18 @@ interface Props {
  * is used for all other allowed types.
  * @param props
  */
-const Button: React.FC<Props> = ({
-  name,
-  bgColor = '#758E9D',
-  borderColor = '#506470',
-  type = 'button'
-}) => {
-  const style = {
-    backgroundColor: bgColor,
-    borderColor: borderColor
-  };
-  const element = () => {
-    if (type === 'file') {
-      return (
-        <div className="Button" style={style}>
-          <label htmlFor="files-input">
-            {name}
-          </label>
-          <input id="files-input" type={type} />
-        </div>
-      );
-    } else {
-      return (
-        <button className="Button" type={type} style={style}>
-          {name}
-        </button>
-      );
-    }
-  };
-  return element();
-};
+class Button extends PureComponent<ButtonProps> {
+  render() {
+    const style = {
+      backgroundColor: this.props.bgColor,
+      borderColor: this.props.borderColor
+    };
+    return (
+      <button className="Button" type={this.props.type} style={style}>
+        {this.props.name}
+      </button>
+    );
+  }
+}
 
-export default React.memo(Button);
+export default Button;

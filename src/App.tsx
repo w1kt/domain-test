@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import './App.css';
-import HCardBuilder from './features/HCardBuilder/components';
+import HCardBuilder from './features/HCardBuilder/containers/HCardBuilder';
 
 export class App extends PureComponent {
   public render() {

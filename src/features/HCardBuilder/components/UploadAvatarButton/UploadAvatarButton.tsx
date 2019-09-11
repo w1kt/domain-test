@@ -1,18 +1,24 @@
 import React, { PureComponent } from 'react';
-import Button from '../Button/Button';
+import { HCardBuilderProps } from '../../containers/HCardBuilder';
+import FileInputButton from '../FileInputButton/FileInputButton';
+
+interface Props {
+  setAvatar: HCardBuilderProps[ 'setAvatar' ];
+}
 
 /**
  * This Button allows users to upload an image and pushes it to the application
  * store.
  */
-export class UploadAvatarButton extends PureComponent {
+export class UploadAvatarButton extends PureComponent<Props> {
   public render() {
     return (
-      <Button
+      <FileInputButton
         name="Upload Avatar"
         bgColor="#758E9D"
         borderColor="#506470"
-        type="file"
+        onFileUpload={this.props.setAvatar}
+        accept="image/*"
       />
     );
   }
