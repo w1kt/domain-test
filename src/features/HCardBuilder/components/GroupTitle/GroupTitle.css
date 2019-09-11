@@ -1,0 +1,11 @@
+.GroupTitle {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;  
+  font-size: 10px;
+  font-weight: 700;
+  color: #BDC5C8;
+  border-bottom: 1px solid #E2E6E8;
+  padding-bottom: 3px;
+  margin-bottom: 23px;
+}

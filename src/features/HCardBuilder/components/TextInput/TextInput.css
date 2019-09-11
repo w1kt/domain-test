@@ -1,0 +1,10 @@
+.TextInput {
+  border: 1px solid #CECFCE;
+  border-radius: 3px;
+  padding: 6px;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  font-family: 'Merriweather', serif;
+  width: 100%;
+  box-sizing: border-box;
+}

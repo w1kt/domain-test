@@ -1,4 +1,16 @@
+@import-normalize;
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,800&display=swap');
+
+.App {
+  font-family: 'Merriweather Sans', serif;
+}
 
 .App-mockup {
   opacity: 0.3;
+  position: absolute
+}
+
+.primary-accent {
+  color: #394F63;
 }

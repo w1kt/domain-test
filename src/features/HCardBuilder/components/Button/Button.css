@@ -1,0 +1,11 @@
+.Button {
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 0.4px;
+  margin-top: -3px;
+  border-radius: 3px;
+  border-width: 0 0 1px 0;
+}
