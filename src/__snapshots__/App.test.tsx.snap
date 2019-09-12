@@ -1,0 +1,526 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="App"
+>
+  <form
+    className="HCardBuilder"
+    onSubmit={[Function]}
+  >
+    <h1
+      className="Title"
+      style={
+        Object {
+          "color": "#394F63",
+        }
+      }
+    >
+      hCard Builder
+    </h1>
+    <div
+      className="FormGroup"
+    >
+      <h2
+        className="GroupTitle"
+      >
+        Personal Details
+      </h2>
+      <div
+        className="flex-grid two-col vertical-margin"
+      >
+        <div
+          className="FormField"
+        >
+          <label
+            className="FieldLabel"
+            htmlFor="given-name"
+            style={
+              Object {
+                "color": "#394F63",
+              }
+            }
+          >
+            Given Name
+          </label>
+          <input
+            className="TextInput"
+            id="given-name"
+            name="given-name"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="FormField"
+        >
+          <label
+            className="FieldLabel"
+            htmlFor="surname"
+            style={
+              Object {
+                "color": "#394F63",
+              }
+            }
+          >
+            Surname
+          </label>
+          <input
+            className="TextInput"
+            id="surname"
+            name="surname"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="FormField"
+        >
+          <label
+            className="FieldLabel"
+            htmlFor="email"
+            style={
+              Object {
+                "color": "#394F63",
+              }
+            }
+          >
+            Email
+          </label>
+          <input
+            className="TextInput"
+            id="email"
+            name="email"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="FormField"
+        >
+          <label
+            className="FieldLabel"
+            htmlFor="phone"
+            style={
+              Object {
+                "color": "#394F63",
+              }
+            }
+          >
+            Phone
+          </label>
+          <input
+            className="TextInput"
+            id="phone"
+            name="phone"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="FormGroup"
+    >
+      <h2
+        className="GroupTitle"
+      >
+        Address
+      </h2>
+      <div
+        className="flex-grid two-col vertical-margin"
+      >
+        <div
+          className="FormField"
+        >
+          <label
+            className="FieldLabel"
+            htmlFor="house-name-or-#"
+            style={
+              Object {
+                "color": "#394F63",
+              }
+            }
+          >
+            House Name or #
+          </label>
+          <input
+            className="TextInput"
+            id="house-name-or-#"
+            name="house-name-or-#"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="FormField"
+        >
+          <label
+            className="FieldLabel"
+            htmlFor="street"
+            style={
+              Object {
+                "color": "#394F63",
+              }
+            }
+          >
+            Street
+          </label>
+          <input
+            className="TextInput"
+            id="street"
+            name="street"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="FormField"
+        >
+          <label
+            className="FieldLabel"
+            htmlFor="suburb"
+            style={
+              Object {
+                "color": "#394F63",
+              }
+            }
+          >
+            Suburb
+          </label>
+          <input
+            className="TextInput"
+            id="suburb"
+            name="suburb"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="FormField"
+        >
+          <label
+            className="FieldLabel"
+            htmlFor="state"
+            style={
+              Object {
+                "color": "#394F63",
+              }
+            }
+          >
+            State
+          </label>
+          <input
+            className="TextInput"
+            id="state"
+            name="state"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="FormField"
+        >
+          <label
+            className="FieldLabel"
+            htmlFor="postcode"
+            style={
+              Object {
+                "color": "#394F63",
+              }
+            }
+          >
+            Postcode
+          </label>
+          <input
+            className="TextInput"
+            id="postcode"
+            name="postcode"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="FormField"
+        >
+          <label
+            className="FieldLabel"
+            htmlFor="country"
+            style={
+              Object {
+                "color": "#394F63",
+              }
+            }
+          >
+            Country
+          </label>
+          <input
+            className="TextInput"
+            id="country"
+            name="country"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onDragStart={[Function]}
+            onDrop={[Function]}
+            onFocus={[Function]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="flex-grid two-col"
+    >
+      <div
+        className="Button"
+        style={
+          Object {
+            "backgroundColor": "#758E9D",
+            "borderColor": "#506470",
+          }
+        }
+      >
+        <label
+          htmlFor="files-input"
+        >
+          Upload Avatar
+        </label>
+        <input
+          accept="image/*"
+          id="files-input"
+          onChange={[Function]}
+          type="file"
+        />
+      </div>
+      <button
+        className="Button"
+        style={
+          Object {
+            "backgroundColor": "#3FA9E2",
+            "borderColor": "#3193C6",
+          }
+        }
+        type="submit"
+      >
+        Create hCard
+      </button>
+    </div>
+  </form>
+  <div
+    className="ComponentPreview"
+  >
+    <div
+      className="preview-content"
+    >
+      <h2
+        className="preview-name"
+      >
+        hCard Preview
+      </h2>
+      <div
+        className="HCard"
+      >
+        <div
+          className="HeaderBar"
+          style={
+            Object {
+              "backgroundColor": "#394F63",
+            }
+          }
+        >
+          <h1
+            className="title"
+          >
+             
+          </h1>
+          <img
+            alt="User Avatar"
+            className="Avatar"
+            src="./default-avatar.jpg"
+          />
+        </div>
+        <div
+          className="hcard-inner"
+        >
+          <div
+            className="CardItem "
+          >
+            <div
+              className="card-item-inner"
+            >
+              <label
+                className="card-item-label"
+                htmlFor="card-item-value"
+                style={
+                  Object {
+                    "color": "#394F63",
+                  }
+                }
+              >
+                Email
+              </label>
+              <span
+                className="card-item-value"
+                id="card-item-value"
+              >
+                
+              </span>
+            </div>
+          </div>
+          <div
+            className="CardItem "
+          >
+            <div
+              className="card-item-inner"
+            >
+              <label
+                className="card-item-label"
+                htmlFor="card-item-value"
+                style={
+                  Object {
+                    "color": "#394F63",
+                  }
+                }
+              >
+                Phone
+              </label>
+              <span
+                className="card-item-value"
+                id="card-item-value"
+              >
+                
+              </span>
+            </div>
+          </div>
+          <div
+            className="CardItem "
+          >
+            <div
+              className="card-item-inner"
+            >
+              <label
+                className="card-item-label"
+                htmlFor="card-item-value"
+                style={
+                  Object {
+                    "color": "#394F63",
+                  }
+                }
+              >
+                Address
+              </label>
+              <span
+                className="card-item-value"
+                id="card-item-value"
+              >
+                 
+              </span>
+            </div>
+            <span
+              className="card-item-extra-value"
+            >
+              
+            </span>
+          </div>
+          <div
+            className="CardItem inline"
+          >
+            <div
+              className="card-item-inner"
+            >
+              <label
+                className="card-item-label"
+                htmlFor="card-item-value"
+                style={
+                  Object {
+                    "color": "#394F63",
+                  }
+                }
+              >
+                Postcode
+              </label>
+              <span
+                className="card-item-value"
+                id="card-item-value"
+              >
+                
+              </span>
+            </div>
+          </div>
+          <div
+            className="CardItem inline"
+          >
+            <div
+              className="card-item-inner"
+            >
+              <label
+                className="card-item-label"
+                htmlFor="card-item-value"
+                style={
+                  Object {
+                    "color": "#394F63",
+                  }
+                }
+              >
+                Country
+              </label>
+              <span
+                className="card-item-value"
+                id="card-item-value"
+              >
+                
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

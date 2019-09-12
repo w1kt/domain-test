@@ -4,10 +4,10 @@ import HCardPreview from '../components/HCardPreview';
 import { UserDetails } from '../../HCardBuilder/components/UserDetails';
 
 const mapStateToProps = (state: State) => {
-  const formState = state.form.hCardBuilder;
+  const formState = state.form && state.form.hCardBuilder;
   let res = {
     avatarUrl: state.hCardBuilder.avatarUrl
-  }
+  };
   if (!formState) {
     return res;
   }
@@ -15,7 +15,7 @@ const mapStateToProps = (state: State) => {
   return {
     ...res,
     ...userDetails
-  }
+  };
 };
 
 const mapStateToDispatch = {};
