@@ -3,7 +3,6 @@ import React from 'react';
 import helpers from '../../../../helpers/helpers';
 import FieldLabel from '../FieldLabel/FieldLabel';
 import FormField from './FormField';
-import { jsxText } from '@babel/types';
 
 const setup = () => {
   const props = { label: 'Test Label', render: jest.fn()};

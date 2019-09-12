@@ -53,7 +53,7 @@ it('should have invoked a method to replace missing user details with empty stri
 });
 
 it('should have invoked a method that can add a comma in between address values', () => {
-  const spy = jest.spyOn(HCard.prototype, 'separateByComma');
+  jest.spyOn(HCard.prototype, 'separateByComma');
   const { wrapper, userDetails } = setup();
   let addressProps = wrapper.find('[label="Address"]').props() as any;
   expect(addressProps.extraLines).toEqual([

@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "coverage": "node scripts/test.js --env=jsdom --coverage"
+    "lint": "eslint --ext js,ts,tsx src"
   },
   "eslintConfig": {
     "extends": "react-app"

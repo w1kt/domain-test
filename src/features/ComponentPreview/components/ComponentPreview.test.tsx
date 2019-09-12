@@ -1,3 +1,4 @@
+/* eslint jsx-a11y/heading-has-content: 0 */
 import React from 'react';
 import { shallow } from 'enzyme';
 import ComponentPreview from './ComponentPreview';
@@ -25,7 +26,7 @@ it('renders self and subcomponents', () => {
       .first()
       .hasClass('ComponentPreview')
   ).toBe(true);
-  expect(wrapper.containsMatchingElement(<h2 />));
+  expect(wrapper.containsMatchingElement(<h2/>));
 });
 
 it('should render the preview name in a header', () => {

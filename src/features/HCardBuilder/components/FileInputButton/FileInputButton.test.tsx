@@ -1,3 +1,4 @@
+/* eslint no-native-reassign: 0 */
 import { shallow } from 'enzyme';
 import React from 'react';
 import FileInputButton from './FileInputButton';
@@ -20,7 +21,7 @@ it('renders without crashing', () => {
 });
 
 it('should render self and subcomponents', () => {
-  const { wrapper, props } = setup();
+  const { wrapper } = setup();
   expect(
     wrapper
       .find('div')
@@ -67,9 +68,9 @@ it('should invoke onFileUpload method when a file successfully uploaded', () => 
   expect(props.onFileUpload).not.toHaveBeenCalled();
   const files = ['testfile'];
   const testEvent2 = { target: { files } };
-  const URL = {createObjectURL: jest.fn()}
-  global = Object.assign(global, {URL})
+  const URL = { createObjectURL: jest.fn() };
+  global = Object.assign(global, { URL });
   input.simulate('change', testEvent2);
   expect(props.onFileUpload).toHaveBeenCalledTimes(1);
-  expect(URL.createObjectURL).toHaveBeenCalledWith(files[ 0 ]);
+  expect(URL.createObjectURL).toHaveBeenCalledWith(files[0]);
 });
