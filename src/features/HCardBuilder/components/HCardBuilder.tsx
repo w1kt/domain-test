@@ -21,7 +21,7 @@ export class HCardBuilder extends PureComponent<
       <form className="HCardBuilder" onSubmit={this.props.handleSubmit}>
         <Title text="hCard Builder"></Title>
         <FormGroup groupTitle="Personal Details">
-          <TextFormField label="Given Name" />
+          <TextFormField label="Given Name"/>
           <TextFormField label="Surname" />
           <TextFormField label="Email" />
           <TextFormField label="Phone" />
