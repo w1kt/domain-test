@@ -13,4 +13,8 @@
   align-self: flex-end;
   padding: 10px;
   letter-spacing: 0.7px;
+  max-width: calc(100% - 84px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

@@ -1,7 +1,7 @@
 .CardItem {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #E2E6E8;
+  border-bottom: 1px solid #e2e6e8;
   margin-bottom: 10px;
 }
 .CardItem.inline {
@@ -19,16 +19,23 @@
   font-size: 10px;
   width: 70px;
 }
-.CardItem .card-item-value, .CardItem .card-item-extra-value {
+.CardItem .card-item-value,
+.CardItem .card-item-extra-value {
   font-family: 'Merriweather', serif;
   font-size: 16px;
   padding: 0 6px;
   letter-spacing: 0.1px;
   padding-bottom: 2px;
   height: 34px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.CardItem .card-item-value {
+  max-width: calc(100% - 70px);
 }
 .CardItem .card-item-extra-value {
   padding-top: 12px;
   padding-left: 75px;
-  border-top: 1px solid #E2E6E8;
+  border-top: 1px solid #e2e6e8;
 }
