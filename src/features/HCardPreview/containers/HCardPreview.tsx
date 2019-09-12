@@ -5,11 +5,17 @@ import { UserDetails } from '../../HCardBuilder/components/UserDetails';
 
 const mapStateToProps = (state: State) => {
   const formState = state.form.hCardBuilder;
+  let res = {
+    avatarUrl: state.hCardBuilder.avatarUrl
+  }
   if (!formState) {
-    return {};
+    return res;
   }
   const userDetails = formState.values as Partial<UserDetails>;
-  return userDetails;
+  return {
+    ...res,
+    ...userDetails
+  }
 };
 
 const mapStateToDispatch = {};

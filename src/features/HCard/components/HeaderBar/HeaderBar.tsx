@@ -5,13 +5,14 @@ import Avatar from '../Avatar/Avatar';
 
 interface Props {
   title: string;
+  avatarUrl?: string;
 }
 
 const HeaderBar: React.FC<Props> = props => {
   return (
     <div className="HeaderBar" style={{ backgroundColor: theme.accentColor }}>
       <h1 className="title">{props.title}</h1>
-      <Avatar />
+      <Avatar imageUrl={props.avatarUrl} />
     </div>
   );
 };

@@ -4,7 +4,9 @@ import './HCard.css';
 import HeaderBar from './HeaderBar/HeaderBar';
 import { UserDetails } from '../../HCardBuilder/components/UserDetails';
 
-interface Props extends Partial<UserDetails> {}
+interface Props extends Partial<UserDetails> {
+  avatarUrl?: string;
+}
 
 class HCard extends PureComponent<Props> {
   public getUserDetails() {
@@ -33,7 +35,10 @@ class HCard extends PureComponent<Props> {
     const userDetails = this.getUserDetails();
     return (
       <div className="HCard">
-        <HeaderBar title={`${userDetails.givenName} ${userDetails.surname}`} />
+        <HeaderBar
+          title={`${userDetails.givenName} ${userDetails.surname}`}
+          avatarUrl={this.props.avatarUrl}
+        />
         <div className="hcard-inner">
           <CardItem label="Email" value={userDetails.email} />
           <CardItem label="Phone" value={userDetails.phone} />

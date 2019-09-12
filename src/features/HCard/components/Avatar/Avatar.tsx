@@ -5,7 +5,10 @@ interface Props {
   imageUrl?: string;
 }
 
-const Avatar: React.FC<Props> = ({ imageUrl = './default-avatar.jpg' }) => {
+const Avatar: React.FC<Props> = ({ imageUrl }) => {
+  if (!imageUrl) {
+    imageUrl = './default-avatar.jpg';
+  }
   return <img className="Avatar" src={imageUrl} alt="User Avatar" />;
 };
 

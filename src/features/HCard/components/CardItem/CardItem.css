@@ -10,6 +10,7 @@
 }
 .CardItem .card-item-inner {
   display: flex;
+  height: 20px;
 }
 .CardItem .card-item-label {
   display: flex;
@@ -24,6 +25,7 @@
   padding: 0 6px;
   letter-spacing: 0.1px;
   padding-bottom: 2px;
+  height: 34px;
 }
 .CardItem .card-item-extra-value {
   padding-top: 12px;
