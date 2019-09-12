@@ -13,5 +13,29 @@ h2 {
   margin: 0;
 }
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 900px) {
+  .App {
+    flex-direction: column;
+  }
+  .ComponentPreview {
+    min-height: 460px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  div.flex-grid.two-col > * {
+    width: calc(100% - 20px);
+  }
+  .flex-grid .Button {
+    margin-top: 10px;
+  }
+  .ComponentPreview {
+    zoom: 0.8;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .ComponentPreview {
+    zoom: 0.7;
+  }
 }
