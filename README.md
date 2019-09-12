@@ -2,6 +2,11 @@
 
 For build documentation visit  https://docs.google.com/document/d/1oXsMcBpymY0JPVvIQI00SskBWXcLpvko3QQAUedIJto/edit?usp=sharing
 
+## Description
+[hCard is a simple, open format for publishing people, companies and
+organizations on the web](http://microformats.org/wiki/hCard).
+This app provides an interface to create a hCard and preview the changes in realtime.
+
 ## Available Scripts
 
 In the project directory, you can run:
