@@ -13,6 +13,8 @@ export interface CommomFieldProps {
 
 /**
  * This component allows grouping of some input field with a label.
+ * Takes the label prop and converts it into an ID which is used for linking
+ * label elements to input elements for a11y.
  */
 export class FormField extends PureComponent<FormFieldProps> {
   public render() {

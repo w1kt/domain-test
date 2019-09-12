@@ -8,6 +8,10 @@ interface Props extends Partial<UserDetails> {
   avatarUrl?: string;
 }
 
+/**
+ * A card of user details.
+ * If user details are missing they will simply be represented by a blank line.
+ */
 class HCard extends PureComponent<Props> {
   public getUserDetails() {
     return {

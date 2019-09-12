@@ -5,6 +5,10 @@ interface Props {
   name: string;
 }
 
+/**
+ * Provides a space to preview components passed as children.
+ * The children are centered in a grey canvas-like area.
+ */
 export class ComponentPreview extends PureComponent<Props> {
   render() {
     return (

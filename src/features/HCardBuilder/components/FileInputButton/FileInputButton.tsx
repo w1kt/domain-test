@@ -10,6 +10,7 @@ interface Props extends ButtonProps {
 /**
  * This component provies uploading of files into the browser.
  * Use the accept prop to specify the allowed types.
+ * Use the onFileUpload prop to specify a function to run on upload.
  */
 export class FileInputButton extends PureComponent<Props> {
   public handleOnChange(event: React.ChangeEvent<HTMLInputElement>) {

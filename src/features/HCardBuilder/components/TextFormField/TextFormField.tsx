@@ -10,10 +10,6 @@ interface Props extends CommomFieldProps {}
  * It has no signature in the DOM and is purely a logical wrapper.
  */
 export class TextFormField extends PureComponent<Props> {
-  /**
-   * Transform to lowercase and replace spaces with dashes.
-   * @param label
-   */
   public render() {
     return (
       <FormField

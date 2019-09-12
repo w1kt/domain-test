@@ -8,6 +8,9 @@ interface Props {
   avatarUrl?: string;
 }
 
+/**
+ * Provides structure to group title and avatar.
+ */
 const HeaderBar: React.FC<Props> = props => {
   return (
     <div className="HeaderBar" style={{ backgroundColor: theme.accentColor }}>

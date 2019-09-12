@@ -5,10 +5,15 @@ import theme from '../../../../config/theme';
 interface Props {
   label: string;
   value: string;
-  extraLines?: string[];
+  // Each element of the array generates a new line with the element value as text
+  extraLines?: string[]; 
+  // Controls wheter the item will be displayed inline (side-by-side) or stacked
   inline?: boolean;
 }
 
+/**
+ * A singular line item of a card.  
+ */
 const CardItem: React.FC<Props> = props => {
   return (
     <div className={`CardItem ${props.inline ? 'inline' : ''}`}>
