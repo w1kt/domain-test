@@ -2,6 +2,7 @@ import React from 'react';
 import App from './App';
 import { shallow } from 'enzyme';
 import HCardBuilder from './features/HCardBuilder/containers/HCardBuilder';
+import HCardPreview from './features/HCardPreview/containers/HCardPreview';
 
 const setup = () => {
   const props = {};
@@ -23,4 +24,5 @@ it('renders self and subcomponents', () => {
       .hasClass('App')
   ).toBe(true);
   expect(wrapper.containsMatchingElement(<HCardBuilder />));
+  expect(wrapper.containsMatchingElement(<HCardPreview />));
 });

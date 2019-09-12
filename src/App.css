@@ -8,10 +8,6 @@
   flex: 1;
   max-width: 1000px;
 }
-.App-mockup {
-  opacity: 0.3;
-  position: absolute;
-}
 h1,
 h2 {
   margin: 0;

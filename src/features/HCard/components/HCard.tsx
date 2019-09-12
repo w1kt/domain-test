@@ -23,7 +23,7 @@ class HCard extends PureComponent<Props> {
       country: this.props['country'] || ''
     };
   }
-  public getAddress2(suburb: string, state: string) {
+  public separateByComma(suburb: string, state: string) {
     if (suburb && state) {
       return `${suburb}, ${state}`;
     } else if (suburb) {
@@ -46,7 +46,7 @@ class HCard extends PureComponent<Props> {
             label="Address"
             value={`${userDetails.houseNum} ${userDetails.street}`}
             extraLines={[
-              this.getAddress2(userDetails.suburb, userDetails.state)
+              this.separateByComma(userDetails.suburb, userDetails.state)
             ]}
           />
           <CardItem label="Postcode" value={userDetails.postcode} inline />
