@@ -18,25 +18,30 @@ it('renders without crashing', () => {
 it('should render self and subcomponents', () => {
   const { wrapper } = setup();
   expect(wrapper.find(FormField).length).toBe(1);
-  expect(wrapper.find(Field).hasClass('TextInput')).toBe(true);
-  const fieldProps = wrapper.find(Field).props();
+});
+
+it('should create a FormField with a render prop that creates a Field', () => {
+  const { wrapper } = setup();
+  const fieldWrapper = wrapper.find(FormField).renderProp('render')(
+    'test-id'
+  );
+  expect(fieldWrapper.find(Field).length).toBe(1);
+});
+
+it('should create Field with appropriate props', () => {
+  const { wrapper } = setup();
+  const fieldWrapper = wrapper.find(FormField).renderProp('render')(
+    'test-id'
+  );
+  const fieldProps = fieldWrapper.find(Field).props();
   expect(fieldProps.component).toBe('input');
   expect(fieldProps.type).toBe('text');
-});
+  expect(fieldProps.id).toBe('test-id');
+  expect(fieldProps.name).toBe('test-id');
+})
 
 it('should pass its props to the FormField', () => {
   const { wrapper, props } = setup();
   const formFieldProps = wrapper.find(FormField).props();
   expect(formFieldProps.label).toBe(props.label);
-});
-
-it('should have formatted the label into a form field name', () => {
-  jest.spyOn(TextFormField.prototype, 'createNameFromLabel');
-  const { wrapper, props } = setup();
-  const func = TextFormField.prototype.createIDFromLabel;
-  expect(func).toHaveBeenCalledTimes(1);
-  expect(func).toHaveBeenCalledWith(props.label);
-  const expectedReturn = 'test-label';
-  expect(func).toHaveReturnedWith(expectedReturn);
-  expect(wrapper.find(Field).props().name).toBe(expectedReturn);
 });

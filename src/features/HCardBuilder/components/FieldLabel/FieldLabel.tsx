@@ -3,6 +3,7 @@ import './FieldLabel.css';
 import theme from '../../../../config/theme';
 
 interface Props {
+  id: string;
   text: string;
 }
 
@@ -12,7 +13,11 @@ interface Props {
  */
 const FieldLabel: React.FC<Props> = props => {
   return (
-    <label className="FieldLabel" style={{ color: theme.accentColor }}>
+    <label
+      className="FieldLabel"
+      htmlFor={props.id}
+      style={{ color: theme.accentColor }}
+    >
       {props.text}
     </label>
   );

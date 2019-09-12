@@ -12,7 +12,7 @@ const initialState: HCardBuilderState = {
 export default (state = initialState, action: Actions): HCardBuilderState => {
   switch (action.type) {
     case SET_AVATAR_URL: {
-      state = {
+      return {
         ...state,
         avatarUrl: action.payload.file
       };

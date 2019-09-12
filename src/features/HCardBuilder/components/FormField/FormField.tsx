@@ -1,9 +1,14 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent } from 'react';
 import './FormField.css';
 import FieldLabel from '../FieldLabel/FieldLabel';
+import helpers from '../../../../helpers/helpers';
 
-export interface FormFieldProps {
-  label: string
+interface FormFieldProps extends CommomFieldProps {
+  render: (id: string) => JSX.Element
+}
+
+export interface CommomFieldProps {
+  label: string;
 }
 
 /**
@@ -11,13 +16,14 @@ export interface FormFieldProps {
  */
 export class FormField extends PureComponent<FormFieldProps> {
   public render() {
+    const id = helpers.createIDFromLabel(this.props.label);
     return (
       <div className="FormField">
-        <FieldLabel text={this.props.label} /> 
-        {this.props.children}
+        <FieldLabel id={id} text={this.props.label} />
+        {this.props.render && this.props.render(id)}
       </div>
-    )
+    );
   }
 }
 
-export default FormField
+export default FormField;

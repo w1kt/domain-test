@@ -1,10 +1,9 @@
 import React, { PureComponent } from 'react';
 import { Field } from 'redux-form';
-import FormField, { FormFieldProps } from '../FormField/FormField';
+import FormField, { CommomFieldProps } from '../FormField/FormField';
 import './TextFormField.css';
-import { createIDFromLabel } from '../../../../helpers';
 
-interface Props extends FormFieldProps {}
+interface Props extends CommomFieldProps {}
 
 /**
  * TextFormField is a special type of FormField that uses a text input.
@@ -13,18 +12,22 @@ interface Props extends FormFieldProps {}
 export class TextFormField extends PureComponent<Props> {
   /**
    * Transform to lowercase and replace spaces with dashes.
-   * @param label 
+   * @param label
    */
   public render() {
     return (
-      <FormField {...this.props}>
-        <Field
-          className="TextInput"
-          name={createIDFromLabel(this.props.label)}
-          component="input"
-          type="text"
-        />
-      </FormField>
+      <FormField
+        {...this.props}
+        render={id => (
+          <Field
+            className="TextInput"
+            name={id}
+            component="input"
+            type="text"
+            id={id}
+          />
+        )}
+      />
     );
   }
 }
