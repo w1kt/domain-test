@@ -5,8 +5,7 @@ import Button, { ButtonProps } from './Button';
 const setup = (buttonType: ButtonProps['type'] = 'submit') => {
   const props = {
     name: 'test',
-    bgColor: '#000',
-    borderColor: '#fff',
+    id: 'test-btn',
     type: buttonType
   };
   const wrapper = shallow(<Button {...props} />);
@@ -26,14 +25,6 @@ it('should render self and subcomponents', () => {
 it('should use the name prop for the button text', () => {
   const { wrapper, props } = setup();
   expect(wrapper.find('button').text()).toBe(props.name);
-});
-
-it('should use style related props for button styling', () => {
-  const { wrapper, props } = setup();
-  expect(wrapper.find('button').props().style).toEqual({
-    backgroundColor: props.bgColor,
-    borderColor: props.borderColor
-  });
 });
 
 it('should default type to "button" if no type prop passed', () => {

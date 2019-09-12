@@ -6,8 +6,7 @@ import FileInputButton from './FileInputButton';
 const setup = () => {
   const props = {
     name: 'test',
-    bgColor: '#000',
-    borderColor: '#fff',
+    id: 'test-btn',
     onFileUpload: jest.fn(),
     accept: 'image/*'
   };
@@ -35,14 +34,6 @@ it('should render self and subcomponents', () => {
 it('should use the name prop for the button text', () => {
   const { wrapper, props } = setup();
   expect(wrapper.find('label').text()).toBe(props.name);
-});
-
-it('should use style related props for button styling', () => {
-  const { wrapper, props } = setup();
-  expect(wrapper.find('.Button').props().style).toEqual({
-    backgroundColor: props.bgColor,
-    borderColor: props.borderColor
-  });
 });
 
 it('should limit file type that is uploaded with accept tag', () => {

@@ -3,8 +3,7 @@ import './Button.css';
 
 export interface ButtonProps {
   name: string;
-  bgColor?: string;
-  borderColor?: string;
+  id: string;
   type?: React.ButtonHTMLAttributes<HTMLButtonElement>['type'];
 }
 
@@ -13,13 +12,9 @@ export interface ButtonProps {
  */
 class Button extends PureComponent<ButtonProps> {
   render() {
-    const style = {
-      backgroundColor: this.props.bgColor,
-      borderColor: this.props.borderColor
-    };
     const type = this.props.type || 'button';
     return (
-      <button className="Button" type={type} style={style}>
+      <button className={`Button ${this.props.id}`} type={type}>
         {this.props.name}
       </button>
     );

@@ -24,6 +24,4 @@ it('should render a styled Button with submit type', () => {
   const buttonProps = wrapper.find(Button).props();
   expect(buttonProps.name).toBe('Create hCard');
   expect(buttonProps.type).toBe('submit');
-  expect(typeof buttonProps.bgColor).toBe('string');
-  expect(typeof buttonProps.borderColor).toBe('string');
 })

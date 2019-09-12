@@ -23,8 +23,6 @@ it('should render a styled FileInputButton that only accept images', () => {
   const { wrapper } = setup();
   const buttonProps = wrapper.find(FileInputButton).props();
   expect(buttonProps.name).toBe('Upload Avatar');
-  expect(typeof buttonProps.bgColor).toBe('string');
-  expect(typeof buttonProps.borderColor).toBe('string');
   expect(buttonProps.accept).toBe('image/*');
 });
 

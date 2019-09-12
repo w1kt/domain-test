@@ -7,7 +7,7 @@ export class App extends PureComponent {
   public render() {
     return (
       <div className="App">
-        <HCardBuilder />
+        <HCardBuilder onSubmit={vals => {}}/>
         <HCardPreview />
       </div>
     );

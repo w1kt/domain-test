@@ -1,0 +1,7 @@
+.Button.upload-avatar {
+  background-color: #758E9D;
+  border-color: #506470;
+}
+.Button.upload-avatar:hover {
+  background-color: #52636D;
+}

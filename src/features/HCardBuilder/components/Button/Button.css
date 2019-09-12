@@ -1,4 +1,5 @@
-div.Button, button.Button {
+div.Button,
+button.Button {
   align-items: center;
   justify-content: center;
   height: 40px;
@@ -21,6 +22,9 @@ div.Button, button.Button {
   justify-content: center;
   align-items: center;
 }
-#files-input{
+#files-input {
   display: none;
+}
+.Button:active {
+  border-bottom-width: 0;
 }

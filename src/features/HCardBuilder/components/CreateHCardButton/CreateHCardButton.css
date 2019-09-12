@@ -1,0 +1,7 @@
+.Button.create-hcard {
+  background-color: #3FA9E2;
+  border-color: #3193C6;
+}
+.Button.create-hcard:hover {
+  background-color: #338BB7;
+}

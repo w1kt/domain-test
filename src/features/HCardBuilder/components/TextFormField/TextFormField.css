@@ -8,3 +8,7 @@
   width: 100%;
   box-sizing: border-box;
 }
+.TextInput:focus {
+  border: 1px solid #394F63;
+  outline: none;
+}

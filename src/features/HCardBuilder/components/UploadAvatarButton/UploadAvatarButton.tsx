@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react';
 import { HCardBuilderProps } from '../../containers/HCardBuilder';
 import FileInputButton from '../FileInputButton/FileInputButton';
+import './UploadAvatarButton.css';
 
 interface Props {
-  setAvatar: HCardBuilderProps[ 'setAvatar' ];
+  setAvatar: HCardBuilderProps['setAvatar'];
 }
 
 /**
@@ -15,8 +16,7 @@ export class UploadAvatarButton extends PureComponent<Props> {
     return (
       <FileInputButton
         name="Upload Avatar"
-        bgColor="#758E9D"
-        borderColor="#506470"
+        id="upload-avatar"
         onFileUpload={this.props.setAvatar}
         accept="image/*"
       />

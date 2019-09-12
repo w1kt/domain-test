@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import Button from '../Button/Button';
+import './CreateHCardButton.css';
 
 /**
  * This Button is used to submit the form for creating hCards.
@@ -9,8 +10,7 @@ export class CreateHCardButton extends PureComponent {
     return (
       <Button
         name="Create hCard"
-        bgColor="#3FA9E2"
-        borderColor="#3193C6"
+        id="create-hcard"
         type="submit"
       />
     );

@@ -3,6 +3,7 @@ import { ButtonProps } from '../Button/Button';
 import '../Button/Button.css';
 
 interface Props extends ButtonProps {
+  id: string; 
   onFileUpload: Function;
   accept: React.InputHTMLAttributes<HTMLInputElement>['accept'];
 }
@@ -21,12 +22,8 @@ export class FileInputButton extends PureComponent<Props> {
     this.props.onFileUpload(URL.createObjectURL(file));
   }
   public render() {
-    const style = {
-      backgroundColor: this.props.bgColor,
-      borderColor: this.props.borderColor
-    };
     return (
-      <div className="Button" style={style}>
+      <div className={`Button ${this.props.id}`}>
         <label htmlFor="files-input">{this.props.name}</label>
         <input
           id="files-input"

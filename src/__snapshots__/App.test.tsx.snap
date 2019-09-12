@@ -318,13 +318,7 @@ exports[`renders correctly 1`] = `
       className="flex-grid two-col"
     >
       <div
-        className="Button"
-        style={
-          Object {
-            "backgroundColor": "#758E9D",
-            "borderColor": "#506470",
-          }
-        }
+        className="Button upload-avatar"
       >
         <label
           htmlFor="files-input"
@@ -339,13 +333,7 @@ exports[`renders correctly 1`] = `
         />
       </div>
       <button
-        className="Button"
-        style={
-          Object {
-            "backgroundColor": "#3FA9E2",
-            "borderColor": "#3193C6",
-          }
-        }
+        className="Button create-hcard"
         type="submit"
       >
         Create hCard
