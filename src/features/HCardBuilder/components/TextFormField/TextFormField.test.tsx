@@ -33,7 +33,7 @@ it('should pass its props to the FormField', () => {
 it('should have formatted the label into a form field name', () => {
   jest.spyOn(TextFormField.prototype, 'createNameFromLabel');
   const { wrapper, props } = setup();
-  const func = TextFormField.prototype.createNameFromLabel;
+  const func = TextFormField.prototype.createIDFromLabel;
   expect(func).toHaveBeenCalledTimes(1);
   expect(func).toHaveBeenCalledWith(props.label);
   const expectedReturn = 'test-label';

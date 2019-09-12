@@ -7,16 +7,15 @@
   display: flex;
   flex: 1;
   max-width: 1000px;
-  box-sizing: border-box;
 }
 .App-mockup {
   opacity: 0.3;
   position: absolute;
 }
-.primary-accent {
-  color: #394f63;
-}
 h1,
 h2 {
   margin: 0;
+}
+* {
+  box-sizing: border-box
 }

@@ -1,0 +1,9 @@
+.Avatar {
+  width: 84px;
+  height: 105px;
+  background-color: white;
+  border: 1px solid #c0c0c0;
+  object-fit: cover;
+  object-position: center center;
+  padding: 6px;
+}

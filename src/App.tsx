@@ -2,6 +2,7 @@ import React, { PureComponent, Component } from 'react';
 import './App.css';
 import HCardBuilder from './features/HCardBuilder/containers/HCardBuilder';
 import ComponentPreview from './features/ComponentPreview/components/ComponentPreview';
+import HCard from './features/HCard/components/HCard';
 
 export class App extends PureComponent {
   public render() {
@@ -12,9 +13,7 @@ export class App extends PureComponent {
           onSubmit={vals => console.log('Sending to backend', vals)}
         />
         <ComponentPreview name="hCard Preview">
-          <div
-            style={{ width: 430, height: 305, backgroundColor: 'white' }}
-          ></div>
+          <HCard />
         </ComponentPreview>
       </div>
     );
