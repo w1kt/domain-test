@@ -2,5 +2,9 @@
   width: 430px;
   height: 305px;
   background: white;
-  border-bottom: 1px solid #AAAAAA;
+  border-bottom: 1px solid #aaaaaa;
+}
+.HCard .hcard-inner {
+  padding: 30px 25px;
+  margin-bottom: -15px;
 }
